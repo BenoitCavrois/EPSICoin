@@ -26,21 +26,20 @@
 
 <body>
   <div class="ui tiny segment" data-tab="first/b">
-    <div class="ui fluid three item menu">
-      <a class="item"></a>
-      <div class="ui dropdown item">
-        Etat
-        <i class="dropdown icon"></i>
-        <div class="menu">
-          <a class="item">
-            <i class=" green circle icon"></i>Disponible</a>
-          <a class="item">
-            <i class="orange circle icon"></i>Absent</a>
-          <a class="item">
-            <i class="red circle icon"></i>Indisponible</a>
-        </div>
+
+    <div class="ui floating dropdown labeled search icon button">
+      <i class="eye icon"></i>
+      <span class="text">Etat</span>
+      <div class="menu">
+        <div class="item">
+          <i class="green circle icon"></i>Disponible</div>
+        <div class="item">
+          <i class="red circle icon"></i>Occupé(e)</div>
+        <div class="item">
+          <i class="lock icon"></i>Ne pas déranger</div>
+        <div class="item">
+          <i class="orange circle icon"></i>De retour dans quelques minutes</div>
       </div>
-      <a class="item"></a>
     </div>
     <table class="ui unstackable table">
       <thead>
@@ -55,16 +54,13 @@
           <td>John</td>
           <td>Approved</td>
           <td class="right aligned">
-            <a href="https://appear.in">
+            <a href="https://appear.in" target="_blank">
               <button class="circular ui icon button">
                 <i class="video camera icon"></i>
               </button>
             </a>
             <button class="circular ui icon button">
               <i class="comment icon"></i>
-            </button>
-            <button class="circular ui icon button">
-              <i class="envelope icon"></i>
             </button>
           </td>
         </tr>
@@ -80,9 +76,6 @@
             <button class="circular ui icon button">
               <i class="comment icon"></i>
             </button>
-            <button class="circular ui icon button">
-              <i class="envelope icon"></i>
-            </button>
           </td>
         </tr>
         <tr>
@@ -96,9 +89,6 @@
             </a>
             <button class="circular ui icon button">
               <i class="comment icon"></i>
-            </button>
-            <button class="circular ui icon button">
-              <i class="envelope icon"></i>
             </button>
           </td>
         </tr>
@@ -114,9 +104,6 @@
             <button class="circular ui icon button">
               <i class="comment icon"></i>
             </button>
-            <button class="circular ui icon button">
-              <i class="envelope icon"></i>
-            </button>
           </td>
         </tr>
         <tr>
@@ -131,9 +118,6 @@
             <button class="circular ui icon button">
               <i class="comment icon"></i>
             </button>
-            <button class="circular ui icon button">
-              <i class="envelope icon"></i>
-            </button>
           </td>
         </tr>
         <tr>
@@ -147,9 +131,6 @@
             </a>
             <button class="circular ui icon button">
               <i class="comment icon"></i>
-            </button>
-            <button class="circular ui icon button">
-              <i class="envelope icon"></i>
             </button>
           </td>
         </tr>
@@ -165,9 +146,6 @@
             <button class="circular ui icon button">
               <i class="comment icon"></i>
             </button>
-            <button class="circular ui icon button">
-              <i class="envelope icon"></i>
-            </button>
           </td>
         </tr>
         <tr>
@@ -182,9 +160,6 @@
             <button class="circular ui icon button">
               <i class="comment icon"></i>
             </button>
-            <button class="circular ui icon button">
-              <i class="envelope icon"></i>
-            </button>
           </td>
         </tr>
         <tr>
@@ -198,9 +173,6 @@
             </a>
             <button class="circular ui icon button">
               <i class="comment icon"></i>
-            </button>
-            <button class="circular ui icon button">
-              <i class="envelope icon"></i>
             </button>
           </td>
         </tr>
@@ -255,6 +227,10 @@
 
   .envelope.icon {
     color: white
+  }
+
+  .ui.floating.dropdown.labeled.search.icon.button {
+    width: 100%;
   }
 </style>
 
